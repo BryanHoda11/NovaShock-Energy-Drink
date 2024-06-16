@@ -1,0 +1,16 @@
+{
+  "name": "energy-drink-website",
+  "version": "1.0.0",
+  "description": "A website for an energy drink using HTML, CSS, and JavaScript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npx tailwindcss -i ./src/input.css -o ./src/output.css --watch"
+  },
+  "keywords": [],
+  "author": "Your Name",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.4.3"
+  }
+}

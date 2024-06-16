@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> NovaShock - Builds the energy in you everyday! </title>
+    <link rel="stylesheet" href="./src/output.css">
+    <link rel="stylesheet" href="responsive/responsive.css">
+    <style>
+        /* WebKit custom scrollbar styles */
+        .custom-scrollbar::-webkit-scrollbar {
+            height: 10px;
+        }
+
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+            background-color: #b8a928;
+            border-radius: 23px;
+            cursor: pointer;
+        }
+
+        .custom-scrollbar::-webkit-scrollbar-track {
+            background: transparent;
+        }
+    </style>
+</head>
+
+<body class="bg-yellow-400">
+    <nav class="flex mx-auto items-center">
+        <div class="logo flex items-center">
+            <a href="http://127.0.0.1:3000/index.html"><img class="h-20 w-20 cursor-pointer" src="images/logo.png"
+                    alt="logo"></a>
+            <a href="http://127.0.0.1:3000/index.html"><span
+                    class="cursor-pointer font-bold px-1 italic">NovaShock</span></a>
+        </div>
+        <ul id="first-nav" class="flex mx-auto items-center justify-center bg-yellow-300 py-5 rounded-full w-[500px]">
+            <li class="px-3 hover:underline"><a href="http://127.0.0.1:3000/index.html">Energy Drinks</a></li>
+            <li class="px-3 hover:underline"><a href="http://127.0.0.1:3000/events.html" target="_blank">Events</a></li>
+            <li class="px-3 hover:underline"><a href="http://127.0.0.1:3000/ambassadors.html" target="_blank">Ambassadors</a></li>
+            <li class="px-3 hover:underline"><a href="http://">Promotions</a></li>
+        </ul>
+
+            <img class="cursor-pointer px-2" id="search" src="images/search.svg" alt="search">
+            <img class="cursor-pointer px-2 hidden" id="hamburger" src="images/hamburger.svg" alt="hamburger">
+            <img class="cursor-pointer px-2 hidden" id="cross" src="images/cross.svg" alt="cross">
+            <input class="rounded-full px-2 py-2 mx-2 w-[15vw] hidden" id="input" type="text" name="search"
+                placeholder="Search here...">
+    </nav>
+
+    <div>
+        <ul id="another-nav" class="flex-col bg-yellow-300 py-5 h-full w-full hidden relative">
+            <li class="px-3 flex justify-center py-2 hover:underline"><a href="http://127.0.0.1:3000/index.html">Energy Drinks</a></li>
+            <li class="px-3 flex justify-center py-2 hover:underline"><a href="http://127.0.0.1:3000/events.html" target="_blank">Events</a></li>
+            <li class="px-3 flex justify-center py-2 hover:underline"><a href="http://127.0.0.1:3000/ambassadors.html" target="_blank">Ambassadors</a></li>
+            <li class="px-3 flex justify-center py-2 hover:underline"><a href="http://">Promotions</a></li>
+            <img class="cursor-pointer px-2 absolute top-0 right-0" id="cross2" src="images/cross.svg" alt="cross">
+        </ul>
+    </div>
+
+    <div class="drink flex mx-auto justify-center items-center my-10 h-[80vh]">
+        <img class="drink-img h-[74vh] w-[45vw] rounded-xl mx-8" src="images/drink.jpg" alt="">
+
+        <div class="drink-info my-10 mx-8 w-[70%] align-middle">
+            <h3 class="font-bold">NOVASHOCK ENERGY DRINK</h3>
+
+            <p class="para1 font-bold text-6xl my-4">Gives energy to do something more!</p>
+            <p class="para2 text-2xl bottom-0 text-yellow-600">NovaShock Energy drink vitalizes the body and keeps the energy
+                level high. Supported by many Athletes, Companies and other Professionals!</p>
+
+            <button class="info-btn bg-yellow-500 rounded-3xl p-2 px-9 m-3 hover:bg-black hover:text-yellow-500 hover:transition-all
+             hover:ease-in">Buy Now!</button>
+        </div>
+    </div>
+
+    <h2 class="text-3xl font-bold my-3 px-5 text-center">Our other products</h2>
+    <div class="main-container w-full h-[70vh]">
+        <div class="container flex">
+            <img class="product mx-auto h-[50vh] w-[20vw] rounded-xl m-2 cursor-pointer" src="images/drink2.jpg" alt="">
+            <img class="product mx-auto h-[50vh] w-[20vw] rounded-xl m-2 mb-10 cursor-pointer" src="images/drink3.jpg" alt="">
+            <img class="product mx-auto h-[50vh] w-[20vw] rounded-xl m-2 cursor-pointer" src="images/drink2.jpg" alt="">
+            <img class="product mx-auto h-[50vh] w-[20vw] rounded-xl m-2 cursor-pointer" src="images/drink3.jpg" alt="">
+        </div>
+    </div>
+
+    <h1 class="font-bold text-3xl mx-5 py-5 mb-6 text-center">Ingredients</h1>
+    <div class="ingredients flex justify-center">
+        <div class="flex flex-col justify-center">
+            <div class="first mb-9">
+                <button id="info-btn1"
+                    class="flex items-center text-4xl px-2 py-6 rounded-t-lg bg-yellow-500 w-[25vw] h-[15vh] font-bold cursor-pointer relative">
+                    Caffeine <img id="down1" class="h-[4vh] right-[10px] bottom-[33px] absolute" src="images/down.svg"
+                        alt="down">
+                    <img id="upArrow1" class="h-[4vh] right-[10px] bottom-[33px] absolute hidden" src="images/up.svg"
+                        alt="up">
+                </button>
+                <p id="para1" class="bg-yellow-500 text-yellow-700 px-2 pb-3 w-[25vw] mb-4 rounded-b-lg hidden">Caffeine
+                    was well known
+                    by ancient civilisations. They consumed it from natural sources like tea, coffee, cacao beans and
+                    cola nuts and appreciated its stimulating effects on the human body.</p>
+            </div>
+
+            <div class="second">
+                <button id="info-btn2"
+                    class="flex items-center text-4xl px-2 py-6 rounded-t-lg bg-yellow-500 w-[25vw] h-[15vh] font-bold cursor-pointer relative">
+                    Sugar <img id="down2" class="h-[4vh] right-[10px] bottom-[33px] absolute" src="images/down.svg"
+                        alt="down">
+                    <img id="upArrow2" class="h-[4vh] right-[10px] bottom-[33px] absolute hidden" src="images/up.svg"
+                        alt="">
+                </button>
+                <p id="para2" class="bg-yellow-500 text-yellow-700 px-2 pb-3 w-[25vw] mb-4 rounded-b-lg hidden">
+                    NovaShock Energy Drink
+                    is made with sugar sourced from sugar beets.</p>
+            </div>
+
+        </div>
+        <img class=" ing-img h-[55vh] w-[40vw] mb-3 mx-11 rounded-xl" src="images/ingredients.jpg" alt="ingredients">
+
+        <div class="flex flex-col justify-center">
+            <div class="mb-9">
+                <button id="info-btn3"
+                    class="flex items-center text-4xl px-2 py-6 rounded-t-lg bg-yellow-500 w-[25vw] h-[15vh] font-bold cursor-pointer relative">
+                    Vitamins <img id="down3" class="h-[4vh] right-[10px] bottom-[33px] absolute" src="images/down.svg"
+                        alt="down">
+                    <img id="upArrow3" class="h-[4vh] right-[10px] bottom-[33px] absolute hidden" src="images/up.svg"
+                        alt="">
+                </button>
+                <p id="para3" class="bg-yellow-500 text-yellow-700 px-2 pb-3 w-[25vw] mb-4 rounded-b-lg hidden">Vitamins
+                    are essential
+                    micronutrients that are required for maintaining normal body functions.</p>
+            </div>
+
+            <div>
+                <button id="info-btn4"
+                    class="flex items-center text-4xl px-2 py-6 rounded-t-lg bg-yellow-500 w-[25vw] h-[15vh] font-bold cursor-pointer relative">
+                    Calories <img id="down4" class="h-[4vh] right-[10px] bottom-[33px] absolute" src="images/down.svg"
+                        alt="down">
+                    <img id="upArrow4" class="h-[4vh] right-[10px] bottom-[33px] absolute hidden" src="images/up.svg"
+                        alt="">
+                </button>
+                <p id="para4" class="bg-yellow-500 text-yellow-700 px-2 pb-3 w-[25vw] mb-4 rounded-b-lg hidden">
+                    NovaShock does not use
+                    any Calories to keep the body healthy.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="videos mt-10 flex justify-between">
+        <video class="h-[80vh] ml-0" controls loop muted width="350" src="videos/video1.mp4"></video>
+        <video class="h-[80vh]" controls loop muted width="350" src="videos/video1.mp4"></video>
+        <video class="h-[80vh]" controls loop muted width="350" src="videos/video2.mp4"></video>
+        <video class="h-[80vh] mr-0" controls loop muted width="350" src="videos/video2.mp4"></video>
+    </div>
+
+
+    <h1 class="px-4 text-3xl font-bold mt-10 text-center">Support & Guide</h1>
+    <div class="support flex justify-center">
+        <div class="flex flex-col mt-10 px-10 justify-center">
+            <img class="user cursor-pointer h-[10vh] w-[12vw]" src="images/user.svg" alt="">
+            <button
+                class="bg-yellow-500 hover:rounded-full p-2 px-10 m-5 hover:bg-black hover:text-yellow-500 hover:transition-all hover:ease-in">User</button>
+            <img class="manager cursor-pointer h-[10vh] w-[12vw]" src="images/manager.svg" alt="">
+            <button
+                class="bg-yellow-500 hover:rounded-full p-2 px-10 m-5 hover:bg-black hover:text-yellow-500 hover:transition-all hover:ease-in">Manager</button>
+        </div>
+        <div class="flex flex-col mt-10 px-10 justify-center">
+            <img class="qa cursor-pointer h-[10vh] w-[12vw]" src="images/q&a.svg" alt="">
+            <button
+                class="bg-yellow-500 p-2 px-10 m-5 hover:bg-black hover:text-yellow-500 hover:rounded-full hover:transition-all hover:ease-in">Q&A</button>
+            <img class="settings cursor-pointer h-[10vh] w-[12vw] " src="images/settings.svg" alt="">
+            <button
+                class="bg-yellow-500 p-2 px-10 m-5 hover:bg-black hover:rounded-full hover:text-yellow-500 hover:transition-all hover:ease-in">Settings</button>
+        </div>
+        <img class="h-[60vh] mb-4" src="images/support.png" alt="">
+    </div>
+
+    <footer class="bg-black h-[60vh] text-yellow-500 flex relative">
+        <div class="navigation flex">
+            <ul class="footer-list1 flex flex-col gap-5 ml-10 pt-16">
+                <li class="cursor-pointer hover:underline">Products & Company</li>
+                <li class="cursor-pointer hover:underline">Contact Us</li>
+                <li class="cursor-pointer hover:underline">Jobs</li>
+                <li class="cursor-pointer hover:underline">Media</li>
+                <li class="cursor-pointer hover:underline">NovaShock Shop</li>
+            </ul>
+
+            <ul class="footer-list2 flex flex-col gap-5 ml-10 pt-16 pl-20">
+                <li class="cursor-pointer hover:underline">Cookie Settings</li>
+                <li class="cursor-pointer hover:underline">Privacy Policy</li>
+                <li class="cursor-pointer hover:underline">Terms of Use</li>
+                <li class="cursor-pointer hover:underline">Brand Protection</li>
+                <li class="cursor-pointer hover:underline">Fraud warning</li>
+                <li class="cursor-pointer hover:underline">Prevention of Sexual Harassement</li>
+            </ul>
+        </div>
+
+        <span class="absolute bottom-0 pb-4 pl-4"> &copy; Copyrights Reserved! NovaShock 2024 </span>
+
+        <div class="logo flex items-center pr-7 absolute right-0 pt-6">
+            <img class="h-20 w-20 cursor-pointer" src="images/logo.png" alt="logo">
+            <span class="cursor-pointer font-bold text-yellow-500 px-1 italic">NovaShock</span>
+        </div>
+        <div class="logos flex absolute right-0 bottom-0 pb-4 pr-7 gap-5">
+            <img class="cursor-pointer" src="images/github.svg" alt="github">
+            <img class="cursor-pointer" src="images/twitter.svg" alt="twitter">
+            <img class="cursor-pointer" src="images/instagram.svg" alt="instagram">
+            <img class="cursor-pointer" src="images/youtube.svg" alt="youtube">
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
